@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* elementu dydziai */
+    font-family: Arial, Helvetica, sans-serif;
+    /* visam tekstui vienodas sriftas */
+}
+.wraper{
+    margin: 0 auto; /* iscentruotas per viduri */
+    max-width: 1200px; /* maksimalus plotis, issimatuoji su "foto sopu"--PHOTOPEA.com */
+    padding: 0 15px; /*vidinis turinys neprisiklijuotu prie sonu  */
+}
+/* 
+---------------------------
+hero page style, pagrindinis
+---------------------------
+*/
+.hero{
+    width: 100%; /* plotis */
+    background-image: url('../image/mini-profile-bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/*kad nebutu siurprizu ir no-repeat  */
+    min-height: 1100px; /*min aukstis  */
+}
+.hero_banner{
+    color: #fff; /*balta spalva pagrindiniam */
+    min-height: 700px;
+    display: flex; /* flexso konteineris */
+    justify-content: flex-end;/* konteinerio elementui nurodom vieta */
+    align-items: center; /* i centra pastatome */
+}
+.banner_box{
+    padding: 80px; /*atsistumia nuo krastu */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 500px; mini prof. plotis */
+    text-align: center; /* teksta iscentruojam */
+    line-height: 1.5; /* eilutes aukstis */
+    flex-basis: 460px;
+}
+.banner_box h1{
+    font-size: 50px; /*padidejo sriftas  */
+    font-weight: 400; /*srifto storis  */
+}
+.banner_box p{
+    font-size: 18px;
+}
+.hero_info{ 
+    min-height: 400px; /* aukstis */
+    width: 100%; /* plotis */
+    background-color: rgba(255, 255, 255, 0.7); /* permatoma balta */   
+    font-size: 20px;
+}
+.info_flex{
+    display: flex;
+    justify-content: space-between; /* nuvaziavo i desina */
+    flex-wrap: wrap; /*kad nesokinetu   */
+}
+.info_text{
+    color: #6b6b6b;
+    line-height: 1.5; /* eilutes aukstis */
+    padding: 20px 30px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 400px; /* flexso base */
+    flex-grow: 5; /* kai stumiam ekrana -aug */
+}
+.info_text h2{
+    font-weight: 400; /* antrastes srifto storis */
+    font-size: 32px;
+    margin-bottom: 20px; /* kad antraste atstumtu paragrafa */
+}
+.info_text a{
+    text-decoration: none;
+    color:#3398cc; /* melyna spalva */
+}
+.info_image{
+    background-color: #986665;
+    min-height: 400px; /* aukstis kaip tevelio */
+    /* min-width: 460px; plotis  */
+    padding: 50px 30px;
+    color: #fff;
+    line-height: 1.5;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 460px;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+}
+.info_image img, .info_image p{
+    margin: 20px 0 40px 0;
+}
